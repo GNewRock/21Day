@@ -8,6 +8,16 @@ int main(){
 	cin>>Num2;
 	
 	cout<<"Enter \'m\' to multiply, anything else to add: ";
-	char UserSelection='/0';
+	char UserSelection='\0';
+	cin>>UserSelection;
+	
+	int Result=0;
+	if(UserSelection=='m')
+	Result=Num1*Num2;
+	else
+	Result=Num1+Num2;
+	
+	cout<<"Result is:"<<Result<<endl;
+	
 	return 0;
 	}
